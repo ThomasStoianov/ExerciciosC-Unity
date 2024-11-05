@@ -13,8 +13,16 @@ public class Exercicio07 : MonoBehaviour
 
     void Start()
     {
-       int resultado =  Random.Range(1,facesDados);
-        print(resultado);
+        if (facesDados == 0)
+        {
+            print("O número de faces do dado não pode ser: " + facesDados);
+        }
+        else
+        {
+            int resultado = Random.Range(1, facesDados);
+            print(resultado);
+        }
+       
     }
 
     

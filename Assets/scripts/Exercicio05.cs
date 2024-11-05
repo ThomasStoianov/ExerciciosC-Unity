@@ -9,10 +9,10 @@ incompleta".*/
 public class Exercicio05 : MonoBehaviour
 
 {
-    [SerializeField] float pontosGanhos = 51;
+    [SerializeField] float pontosGanhos = 0;
     void Start()
     {
-        if (pontosGanhos > 50)
+        if (pontosGanhos >= 50)
         {
             print("Missão Bem-Sucedida");
         }

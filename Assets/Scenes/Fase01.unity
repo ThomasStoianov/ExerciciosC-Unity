@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 91445553}
   - component: {fileID: 91445554}
   - component: {fileID: 91445555}
+  - component: {fileID: 91445556}
+  - component: {fileID: 91445557}
   m_Layer: 0
   m_Name: char_blue_0 (1)
   m_TagString: Untagged
@@ -337,12 +339,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91445546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63b2738285711db4fae94d8cb488c5a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pontosGanhos: 3.6
+  pontosGanhos: 60.9
+--- !u!114 &91445556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91445546}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebcddc42c73766458e2efc9bc7c7a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mago: 0
+--- !u!114 &91445557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91445546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59aa5028778e4b4c8683da4fe78bccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facesDados: 1
 --- !u!1 &196373313
 GameObject:
   m_ObjectHideFlags: 0
