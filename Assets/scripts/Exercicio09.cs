@@ -14,6 +14,8 @@ public class Exercicio09 : MonoBehaviour
    
     void Start()
     {
+        timeA = Random.Range(1, 5);
+        timeB = Random.Range(1, 5);
         if (timeA > timeB)
         {
             print("Vitória do time A");
@@ -24,7 +26,7 @@ public class Exercicio09 : MonoBehaviour
             print("Vitória do time B");
         }
 
-        else if (timeA >= 3 && timeB >= 3 && timeA == timeB)
+        else if (timeA > 3 && timeB > 3 && timeA == timeB)
         {
             print("Empate emocionante!");
         }
