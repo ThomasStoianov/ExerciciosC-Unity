@@ -7,13 +7,14 @@ variável inteira hora seja incrementada de uma unidade a cada 10
 segundos e volte a ser 0 quando alcançar o valor 24. Quando
 completar um ciclo, incremente uma variável dias e escreva o
 número de dias que se passaram no console. (Coloque o código
-dentro da função-evento Update).*/
+dentro da função-evento Update).
+*/
 
 public class Exercicio08 : MonoBehaviour
 {
-    [SerializeField] int hora = 0;
-    [SerializeField] int dia = 0;
-    
+    [SerializeField] int horas = 0;
+    [SerializeField] int dias = 0;
+    [SerializeField] float segundos = 0;
     void Start()
     {
         
@@ -22,16 +23,18 @@ public class Exercicio08 : MonoBehaviour
     
     void Update()
     {
-       
-            Task.Delay(10000);
+        segundos += Time.deltaTime;
 
-            if (hora == 24)
+        if(segundos >= 10f)
+        {
+            horas++;
+            segundos = 0;
+            if(horas == 24)
             {
-                hora = 0;
-                dia += 1;
+                dias++;
+                horas = 0;
+                print(dias);
             }
-
-            print("Horas" + hora + "Dias" + dia); 
-       
+        }
     }
 }
