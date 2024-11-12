@@ -7,13 +7,13 @@ public class Exercicio02repeticao : MonoBehaviour
     ataque.*/
 
     int dano = 0;
-    int i = 0;
+    
     void Start()
     {
         for (int i = 0; i < 5; i++)
         {
             dano += 2;
-            print(dano);
+            print("Ataque " + i + " Dano " + dano);
         }
         
     }

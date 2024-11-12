@@ -6,7 +6,7 @@ public class Exercicio01repeticao : MonoBehaviour
     regressiva de 5 a 1 e exiba "Início da partida!" ao final.*/
     void Start()
     {
-        for(int i = 5; i >= 0; i--)
+        for(int i = 5; i > 0; i--)
         {
             print(i);
         }
